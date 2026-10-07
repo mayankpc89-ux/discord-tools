@@ -65,22 +65,22 @@ const formats = [
 ];
 
 const permissions = [
-  ["Administrator", 8n],
-  ["View Audit Log", 128n],
-  ["Manage Server", 32n],
-  ["Manage Channels", 16n],
-  ["Manage Roles", 268435456n],
-  ["Manage Messages", 8192n],
-  ["Kick Members", 2n],
-  ["Ban Members", 4n],
-  ["Moderate Members", 1099511627776n],
-  ["Mention Everyone", 131072n],
-  ["Send Messages", 2048n],
-  ["Embed Links", 16384n],
-  ["Attach Files", 32768n],
-  ["Read Message History", 65536n],
-  ["Connect", 1048576n],
-  ["Speak", 2097152n],
+  ["Administrator", BigInt("8")],
+  ["View Audit Log", BigInt("128")],
+  ["Manage Server", BigInt("32")],
+  ["Manage Channels", BigInt("16")],
+  ["Manage Roles", BigInt("268435456")],
+  ["Manage Messages", BigInt("8192")],
+  ["Kick Members", BigInt("2")],
+  ["Ban Members", BigInt("4")],
+  ["Moderate Members", BigInt("1099511627776")],
+  ["Mention Everyone", BigInt("131072")],
+  ["Send Messages", BigInt("2048")],
+  ["Embed Links", BigInt("16384")],
+  ["Attach Files", BigInt("32768")],
+  ["Read Message History", BigInt("65536")],
+  ["Connect", BigInt("1048576")],
+  ["Speak", BigInt("2097152")],
 ];
 
 function copyText(text: string) {
@@ -155,9 +155,9 @@ function SnowflakeTool() {
   try {
     if (/^\d{15,25}$/.test(id)) {
       const snowflake = BigInt(id);
-      const discordEpoch = 1420070400000n;
+      const discordEpoch = BigInt("1420070400000");
       const milliseconds =
-        Number((snowflake >> 22n) + discordEpoch);
+        Number((snowflake >> BigInt("22")) + discordEpoch);
 
       const date = new Date(milliseconds);
 
@@ -209,7 +209,7 @@ function PermissionTool() {
   const value = useMemo(() => {
     return permissions
       .filter(([name]) => selected.includes(name as string))
-      .reduce((total, [, bit]) => total | (bit as bigint), 0n);
+      .reduce((total, [, bit]) => total | (bit as bigint), BigInt("0"));
   }, [selected]);
 
   function toggle(name: string) {
