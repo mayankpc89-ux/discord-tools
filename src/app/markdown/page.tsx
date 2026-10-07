@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { MarkdownTool, ToolPage } from "@/components/discord-tools";
 
 export const metadata: Metadata = {
@@ -16,3 +16,4 @@ export default function Page() {
     </ToolPage>
   );
 }
+

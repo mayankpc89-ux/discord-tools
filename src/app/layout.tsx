@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "DiscordTools — Free Discord Utilities",
+    default: "DiscordTools - Free Discord Utilities",
     template: "%s | DiscordTools",
   },
   description:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Discord emoji ID",
   ],
   openGraph: {
-    title: "DiscordTools — Free Discord Utilities",
+    title: "DiscordTools - Free Discord Utilities",
     description:
       "Fast, free Discord utilities for users, developers and server owners.",
     type: "website",
@@ -35,3 +35,4 @@ export default function RootLayout({
     </html>
   );
 }
+

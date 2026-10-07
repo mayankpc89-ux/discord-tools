@@ -16,7 +16,7 @@ export default function Home() {
           <Link className="brand" href="/">
             DiscordTools
           </Link>
-          <span className="nav-link">Free â€¢ Fast â€¢ No signup</span>
+          <span className="nav-link">Free | Fast | No signup</span>
         </div>
       </nav>
 
@@ -48,7 +48,7 @@ export default function Home() {
                 <h2>{tool.name}</h2>
                 <p>{tool.description}</p>
               </div>
-              <span className="tool-arrow">â†’</span>
+              <span className="tool-arrow">&rarr;</span>
             </Link>
           ))}
         </section>
@@ -79,3 +79,5 @@ export default function Home() {
     </main>
   );
 }
+
+

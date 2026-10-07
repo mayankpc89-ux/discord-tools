@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 
@@ -12,43 +12,43 @@ type Tool = {
 export const discordTools: Tool[] = [
   {
     id: "timestamp",
-    icon: "🕐",
+    icon: "ðŸ•",
     name: "Timestamp Generator",
     description: "Create Discord timestamps for any date and time.",
   },
   {
     id: "snowflake",
-    icon: "🔢",
+    icon: "ðŸ”¢",
     name: "Snowflake Decoder",
     description: "Convert a Discord ID into its creation timestamp.",
   },
   {
     id: "permissions",
-    icon: "🔐",
+    icon: "ðŸ”",
     name: "Permission Calculator",
     description: "Calculate Discord permission integers.",
   },
   {
     id: "color",
-    icon: "🎨",
+    icon: "ðŸŽ¨",
     name: "Color Converter",
     description: "Convert HEX colors into RGB and decimal values.",
   },
   {
     id: "markdown",
-    icon: "📝",
+    icon: "ðŸ“",
     name: "Markdown Preview",
     description: "Preview common Discord Markdown formatting.",
   },
   {
     id: "emoji",
-    icon: "😀",
+    icon: "ðŸ˜€",
     name: "Emoji ID Extractor",
     description: "Extract names and IDs from Discord emoji.",
   },
   {
     id: "invite",
-    icon: "🔗",
+    icon: "ðŸ”—",
     name: "Bot Invite Generator",
     description: "Generate a Discord OAuth2 bot invite URL.",
   },
@@ -107,7 +107,7 @@ export function TimestampTool() {
 
   return (
     <div className="tool-panel">
-      <h2>🕐 Discord Timestamp Generator</h2>
+      <h2>ðŸ• Discord Timestamp Generator</h2>
       <p className="muted">
         Create timestamps that automatically adapt to every user's timezone.
       </p>
@@ -170,7 +170,7 @@ export function SnowflakeTool() {
 
   return (
     <div className="tool-panel">
-      <h2>🔢 Discord Snowflake Decoder</h2>
+      <h2>ðŸ”¢ Discord Snowflake Decoder</h2>
       <p className="muted">
         Paste a Discord user, message, server or other snowflake ID.
       </p>
@@ -222,7 +222,7 @@ export function PermissionTool() {
 
   return (
     <div className="tool-panel">
-      <h2>🔐 Discord Permission Calculator</h2>
+      <h2>ðŸ” Discord Permission Calculator</h2>
       <p className="muted">
         Select permissions and generate the permission integer.
       </p>
@@ -272,7 +272,7 @@ export function ColorTool() {
 
   return (
     <div className="tool-panel">
-      <h2>🎨 Discord Color Converter</h2>
+      <h2>ðŸŽ¨ Discord Color Converter</h2>
       <p className="muted">
         Convert HEX colors into RGB and Discord decimal colors.
       </p>
@@ -356,7 +356,7 @@ export function MarkdownTool() {
 
   return (
     <div className="tool-panel">
-      <h2>📝 Discord Markdown Preview</h2>
+      <h2>ðŸ“ Discord Markdown Preview</h2>
       <p className="muted">
         Preview common Discord Markdown formatting.
       </p>
@@ -383,7 +383,7 @@ export function EmojiTool() {
 
   return (
     <div className="tool-panel">
-      <h2>😀 Discord Emoji ID Extractor</h2>
+      <h2>ðŸ˜€ Discord Emoji ID Extractor</h2>
       <p className="muted">
         Paste Discord emoji such as &lt;:name:123456789&gt;.
       </p>
@@ -434,7 +434,7 @@ export function InviteTool() {
 
   return (
     <div className="tool-panel">
-      <h2>🔗 Discord Bot Invite Generator</h2>
+      <h2>ðŸ”— Discord Bot Invite Generator</h2>
       <p className="muted">
         Generate an OAuth2 invite URL for your Discord bot.
       </p>
@@ -515,3 +515,4 @@ export function ToolPage({
     </main>
   );
 }
+

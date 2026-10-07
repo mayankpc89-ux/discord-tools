@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 
 const base = "https://discord-tools-two.vercel.app";
 
@@ -11,3 +11,4 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: `${base}/sitemap.xml`,
   };
 }
+

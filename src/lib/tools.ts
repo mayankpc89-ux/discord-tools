@@ -49,3 +49,4 @@ export const tools: Tool[] = [
     description: "Generate a Discord OAuth2 bot invite URL.",
   },
 ];
+
