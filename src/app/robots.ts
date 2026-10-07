@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 
+const base = "https://discord-tools-two.vercel.app";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://YOURDOMAIN.com/sitemap.xml",
+    sitemap: `${base}/sitemap.xml`,
   };
 }
